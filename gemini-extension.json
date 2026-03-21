@@ -1,0 +1,12 @@
+{
+  "name": "command-guardrail",
+  "version": "1.0.0",
+  "description": "Validation server for shell commands to prevent syntax and environment-specific errors.",
+  "main": "dist/index.js",
+  "tools": [
+    {
+      "name": "validate_command",
+      "description": "Validates a shell command for common syntax errors and parameter mistakes to save time and prevent failed executions."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+@startuml
+package "command-guardrail" {
+    class "Guardrail Server" {
+        + validate_command(command)
+    }
+    
+    class "Validation Logic" {
+        + checkCommand(fullCommand)
+    }
+    
+    "Guardrail Server" --> "Validation Logic" : "Uses"
+}
+@enduml
